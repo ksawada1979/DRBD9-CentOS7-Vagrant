@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
     #
       p.customize [
         'createmedium', 'disk',
-        '--filename', ".vagrant/disk/DRBD9-1/sdc.vmdk",
+        '--filename', ".vagrant/disk/DRBD9-1/sdb.vmdk",
         '--format', 'VMDK',
         '--size', 10 * 1024]
       p.customize [
@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
         '--port', 2,
         '--device', 0,
         '--type', 'hdd',
-        '--medium', ".vagrant/disk/DRBD9-1/sdc.vmdk"]
+        '--medium', ".vagrant/disk/DRBD9-1/sdb.vmdk"]
       #
       # portcountをディスクの数だけ増やす(例:2つ)
       #
@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
     #
       p.customize [
         'createmedium', 'disk',
-        '--filename', ".vagrant/disk/DRBD9-2/sdc.vmdk",
+        '--filename', ".vagrant/disk/DRBD9-2/sdb.vmdk",
         '--format', 'VMDK',
         '--size', 10 * 1024]
       p.customize [
@@ -52,7 +52,7 @@ Vagrant.configure(2) do |config|
         '--device', 0,
 
         '--type', 'hdd',
-        '--medium', ".vagrant/disk/DRBD9-2/sdc.vmdk"]
+        '--medium', ".vagrant/disk/DRBD9-2/sdb.vmdk"]
       #
       # portcountをディスクの数だけ増やす(例:2つ)
       #
@@ -74,7 +74,7 @@ Vagrant.configure(2) do |config|
     #
       p.customize [
         'createmedium', 'disk',
-        '--filename', ".vagrant/disk/DRBD9-3/sdc.vmdk",
+        '--filename', ".vagrant/disk/DRBD9-3/sdb.vmdk",
         '--format', 'VMDK',
         '--size', 10 * 1024]
       p.customize [
@@ -83,7 +83,7 @@ Vagrant.configure(2) do |config|
         '--port', 2,
         '--device', 0,
         '--type', 'hdd',
-        '--medium', ".vagrant/disk/DRBD9-3/sdc.vmdk"]
+        '--medium', ".vagrant/disk/DRBD9-3/sdb.vmdk"]
       #
       # portcountをディスクの数だけ増やす(例:2つ)
       #
